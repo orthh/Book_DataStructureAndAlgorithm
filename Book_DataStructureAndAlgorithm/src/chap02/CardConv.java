@@ -27,6 +27,21 @@ public class CardConv {
 			dno = cardConv(no, cd, cno);
 			System.out.println(dno);
 			System.out.println(cno);
+			
+			//Q6
+			System.out.printf("%3d|\t%3d" ,cd, no);
+			System.out.println("\n   +----------");
+			for(int i=0; i<dno; i++) {
+				no = no/2;
+				if(i == dno -1) {
+					System.out.printf("    \t%3d ...%3c", no, cno[dno - 1 -i]);
+					System.out.println();
+				}else {
+					System.out.printf("%3d|\t%3d ...%3c", cd,no, cno[dno - 1 -i]);
+					System.out.println();
+				}
+				
+			}
 
 			System.out.println(cd + "진수로");
 			for (int i = 0; i < dno; i++) {
