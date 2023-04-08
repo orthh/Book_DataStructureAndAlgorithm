@@ -25,8 +25,7 @@ public class CardConv {
 			} while (cd < 2 || cd > 36);
 
 			dno = cardConv(no, cd, cno);
-			System.out.println(dno);
-			System.out.println(cno);
+
 			
 			//Q6
 			System.out.printf("%3d|\t%3d" ,cd, no);
@@ -57,7 +56,7 @@ public class CardConv {
 	static int cardConv(int x, int r, char[] d) { // 정숫값 x를 r진수로 변환하여 배열d에 아랫자리부터 넣어 두고 자릿수를 반환
 		int digits = 0;
 		String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+		
 		do {
 			d[digits++] = dchar.charAt(x % r);
 			x /= r;
