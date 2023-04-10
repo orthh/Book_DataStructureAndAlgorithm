@@ -12,7 +12,7 @@ public class PhyscData {
 		this.height = height;
 		this.vision = vision;
 	}
-
+	
 
 
 }
